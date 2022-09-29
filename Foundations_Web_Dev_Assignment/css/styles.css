@@ -1,0 +1,373 @@
+@import url("https://fonts.googleapis.com/css2?family=Creepster&display=swap");
+
+body {
+  font-family: sans-serif;
+  font-size: 16px;
+  color: #25255f;
+  background-color: #fff;
+  cursor: url("witch-128.png"), auto;
+}
+
+header {
+  z-index: 1;
+  position: fixed;
+  top: 0;
+  background-color: white;
+  /* vw is width of browser */
+  width: 100vw;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+nav {
+  cursor: pointer;
+}
+
+nav ul {
+  display: flex;
+  list-style-type: none;
+}
+
+li {
+  padding: 0 20px;
+  justify-content: end;
+  align-items: flex-end;
+  list-style-type: none;
+}
+
+a {
+  color: #25255f;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #99d6bf;
+  transition: all 2s;
+  text-underline-offset: #da02f6;
+}
+
+a:visited {
+  color: #25255f;
+}
+
+.column-container {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-around;
+  gap: 20px;
+  margin-top: 80px;
+  flex-wrap: wrap;
+}
+
+.featured-movie {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 300px;
+}
+
+.featured-movie-article {
+  background-color: rgb(7, 92, 65);
+  color: #fff;
+  border-radius: 4px;
+  padding: 20px;
+}
+
+.movies {
+  display: flex;
+  display: row;
+  justify-content: space-between;
+  width: 50%;
+  flex-wrap: wrap;
+  max-width: 850px;
+  gap: 20px;
+}
+
+.movies article {
+  width: 200px;
+}
+
+footer {
+  background-color: ffebef;
+  width: 100%;
+  height: 80px;
+  margin-top: 10px;
+  bottom: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* JOIN PAGE */
+
+.wrapper {
+  width: 60%;
+  margin: 0 auto;
+}
+
+.form-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.scary-button {
+  background-color: #25255f;
+  color: white;
+  font-family: "Creepster", cursive;
+  font-size: 1em;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  padding: 12px;
+  border-radius: 4px;
+}
+
+.movie-banners {
+  flex-direction: column;
+  width: 100%;
+  height: 180px;
+}
+
+video {
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.video-banner {
+  position: relative;
+  width: 100%;
+  height: 500px;
+  overflow: hidden;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#home-header {
+  position: relative;
+  font-family: "Creepster", cursive;
+  font-size: 32px;
+  color: white;
+  text-shadow: 1px 1px 8px rgba(0, 0, 0, 0.6);
+  gap: 20px;
+}
+
+#join-form p {
+  font-size: 1em;
+  line-height: 1.5;
+  color: #25255f;
+}
+
+.heading-intro-text {
+  padding: 20px;
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  background-color: #da02f6;
+  padding: 2em 1em 4em;
+  font-family: sans-serif;
+  flex: 1;
+}
+
+.field {
+  margin-bottom: 1em;
+  color: #25255f;
+  font-size: 1.2rem;
+}
+
+.field label {
+  margin-right: 1em;
+}
+
+.field input,
+.field textarea,
+.field select {
+  width: 100%;
+  display: block;
+  margin: 0.5em 0 1em;
+  font-size: 1em;
+  padding: 0.5em;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+textarea {
+  min-height: 6em;
+}
+
+.preselect-field {
+  margin: 0.5em 0 0;
+}
+
+.preselect-field input {
+  margin: 0;
+  width: auto;
+  display: inline-block;
+  margin: 0;
+}
+
+.dropdown-field {
+  margin-top: 1.5em;
+}
+
+input[type="submit"] {
+  background-color: #25255f;
+  color: white;
+  font-size: 1.5em;
+  border: none;
+  text-transform: uppercase;
+  padding: 1em 2em;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+input[submit]:hover {
+  background-color: #40408a;
+}
+
+#form-intro-text {
+  font-family: sans-serif;
+}
+
+#form-h1 {
+  font-family: sans-serif;
+  color: #25255f;
+  font-size: 2 rem;
+  background-color: #ff9acc;
+}
+
+.join-us-image {
+  max-width: 318px;
+}
+
+.join-video {
+  height: 150%;
+}
+
+.join {
+  position: relative;
+  font-family: "Creepster", cursive;
+  font-size: 32px;
+  color: white;
+  text-shadow: 1px 1px 8px rgba(0, 0, 0, 0.6);
+  gap: 20px;
+}
+
+.join-nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.join-nav-list {
+  padding: 0 20px;
+}
+
+.join-us-banner {
+  position: relative;
+  width: 100%;
+  height: 500px;
+  overflow: hidden;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#join-us-heading {
+  position: relative;
+  font-family: "Creepster", cursive;
+  font-size: 32px;
+  color: white;
+  text-shadow: 1px 1px 8px rgba(0, 0, 0, 0.6);
+  gap: 20px;
+}
+
+.form-container {
+  gap: 20px;
+}
+
+/* animations */
+
+@keyframes flickerAnimation {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-o-keyframes flickerAnimation {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-moz-keyframes flickerAnimation {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes flickerAnimation {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+#home-header,
+#join-us-heading {
+  -webkit-animation: flickerAnimation 2.9s infinite;
+  -moz-animation: flickerAnimation 2.9s infinite;
+  -o-animation: flickerAnimation 2.9s infinite;
+  animation: flickerAnimation 2.9s infinite;
+}
+
+/* media queries */
+
+@media screen and (max-width: 655px) {
+  .featured-movie,
+  .movies,
+  .movies article,
+  .wrapper {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 923px) {
+  .join-us-image {
+    max-width: 100%;
+  }
+}

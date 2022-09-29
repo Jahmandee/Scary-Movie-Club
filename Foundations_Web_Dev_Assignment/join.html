@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>Join</title>
+  </head>
+  <body>
+    <header>
+      <div class="join-nav">
+        <button class="scary-button" onclick="enableScaryMode()">
+          Scary Mode
+        </button>
+        <nav>
+          <ul>
+            <li class="join-nav-list"><a href="index.html">Home</a></li>
+            <li><a href="./join.html">Join</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <div class="join-us-banner">
+      <video class="join-video" playsinline autoplay muted loop poster>
+        <source
+          id="join-us-banner-source"
+          src="https://vod-progressive.akamaized.net/exp=1664447743~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F1010%2F30%2F755051084%2F3460503677.mp4~hmac=d02d52cd1b932b8763cc29578933ca1fb181774ccf63280a7a86ea0e944de225/vimeo-prod-skyfire-std-us/01/1010/30/755051084/3460503677.mp4"
+          type="video/mp4"
+        />
+      </video>
+      <div id="join-us-heading">
+        <h1 class="home-h1">Join Us</h1>
+      </div>
+    </div>
+
+    <section id="join-form">
+      <div class="wrapper">
+        <div class="heading-intro-text">
+          <h1 class="form-h1">Join our Meetups</h1>
+          <p id="form-intro-text">
+            Do you like old scary fims? Every month we get together over Zoom
+            and watch a film together over a glass of your favourite beverage.
+            We have discussion afterwards and sometimes even guest speakers and
+            special events. You must be over 18 to join due to the rating of the
+            films.
+          </p>
+        </div>
+        <div class="form-container">
+          <form method="POST">
+            <div class="field">
+              <label for="full-name"> What's your full name? </label>
+              <input
+                type="text"
+                id="full-name"
+                name="name"
+                placeholder="Full Name*"
+                required
+              />
+            </div>
+
+            <div class="field">
+              <label for="email"> What's your email? </label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Email*"
+                required
+              />
+            </div>
+
+            <div class="field">
+              <label for="inspo-why"> Why do you love old scary films? </label>
+              <textarea id="inspo-why">
+I love old scary films because..</textarea
+              >
+            </div>
+
+            <div class="field">
+              <label>How often can you join us?</label>
+              <div class="field preselect-field">
+                <input type="radio" name="when" id="week" value="weekly" />
+                <label for="week">Weekly</label>
+              </div>
+              <div class="field preselect-field">
+                <input type="radio" name="when" id="day" value="monthly" />
+                <label for="day">Monthly</label>
+              </div>
+            </div>
+
+            <div class="field preselect-field">
+              <input
+                type="checkbox"
+                name="speaker"
+                id="speaker"
+                value="speaker"
+              />
+              <label for="speaker"
+                >Yes, I want to give a talk to the group.</label
+              >
+            </div>
+
+            <div class="field dropdown-field">
+              <label for="age-select"> Are you over the age of 18?</label>
+              <select id="age-select" name="choice">
+                <option value="">Please select...</option>
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+              </select>
+            </div>
+
+            <input type="submit" value="Sign up" />
+          </form>
+          <img
+            class="join-us-image"
+            src="./julia-kadel-hdB8UNLxTRY-unsplash.jpg"
+            alt="skull lady"
+          />
+        </div>
+      </div>
+    </section>
+
+    <script>
+      function enableScaryMode() {
+        document.body.style.backgroundColor = "black";
+
+        let heading = document.querySelector(".home-h1");
+        heading.style.color = "red";
+
+        let scaryButton = document.querySelector(".scary-button");
+        scaryButton.style.color = "red";
+
+        document.body.style.cursor = 'url("witch-128.png"), auto';
+      }
+    </script>
+  </body>
+  <footer><p>Scary Movie Club Amanda Lane 2022</p></footer>
+</html>

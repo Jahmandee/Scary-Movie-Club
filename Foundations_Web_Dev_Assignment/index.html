@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>Movie Club</title>
+  </head>
+  <body>
+    <header>
+      <div class="header-content">
+        <button class="scary-button" onclick="enableScaryMode()">
+          Scary Mode
+        </button>
+
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="./join.html">Join</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <div class="video-banner">
+      <video id="video-banner-player" playsinline autoplay muted loop poster>
+        <source id="video-banner-source" src="./creepy.mp4" type="video/mp4" />
+      </video>
+      <div id="home-header">
+        <h1 class="home-h1">Scary Movie Club</h1>
+      </div>
+    </div>
+
+    <main>
+      <div class="column-container">
+        <section class="featured-movie">
+          <article class="featured-movie-article">
+            <h3>This Months Film</h3>
+            <h4>Son of Ingagi</h4>
+            <p><i>1940</i></p>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+              sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+
+            <p><strong>Date:</strong> Last Wednesday of every Month</p>
+            <p><strong>Time:</strong> 19:00 AEST</p>
+            <p>
+              <strong>Current Members:</strong> Details of the Zoom call will be
+              sent via email.
+            </p>
+            <p>
+              <strong>Interested?</strong> Fill out the form on the 'join' page
+              to be part of the club.
+            </p>
+
+            <img class="movie-banners" src="./image-7.jpeg" alt="image-7" />
+          </article>
+        </section>
+
+        <section class="movies">
+          <article>
+            <div>
+              <h3>Dr Jekyll & Mr Hyde</h3>
+              <p><i>1963</i></p>
+              <h4>August</h4>
+
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat.
+              </p>
+              <img class="movie-banners" src="./image-1.jpeg" alt="image1" />
+            </div>
+          </article>
+
+          <article>
+            <h3>Psycho</h3>
+            <p><i>1960</i></p>
+            <h4>July</h4>
+
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat.
+            </p>
+            <img class="movie-banners" src="./image-2.jpeg" alt="image-2" />
+          </article>
+
+          <article>
+            <h3>Nosferatu</h3>
+            <p><i>1922</i></p>
+            <h4>June</h4>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat.
+            </p>
+            <img class="movie-banners" src="./image-3.jpeg" alt="image-3" />
+          </article>
+
+          <article>
+            <h3>Eyes with no Face</h3>
+            <p><i>1960</i></p>
+            <h4>May</h4>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat.
+            </p>
+            <img class="movie-banners" src="./image-4.jpeg" alt="image-4" />
+          </article>
+
+          <article>
+            <h3>Frankenstein</h3>
+            <p><i>1931</i></p>
+            <h4>April</h4>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat.
+            </p>
+            <img class="movie-banners" src="./image-5.jpeg" alt="image-5" />
+          </article>
+
+          <article>
+            <h3>Cabinet of Dr Caligari</h3>
+            <p>1920</p>
+            <h4>March</h4>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat.
+            </p>
+            <img class="movie-banners" src="./image-6.jpeg" />
+          </article>
+        </section>
+      </div>
+    </main>
+    <footer><p>Scary Movie Club Amanda Lane 2022</p></footer>
+
+    <script>
+      function enableScaryMode() {
+        document.body.style.backgroundColor = "black";
+
+        document.body.style.cursor = 'url("witch-128.png"), auto';
+
+        let heading = document.querySelector(".home-h1");
+        heading.style.color = "red";
+
+        let scaryButton = document.querySelector(".scary-button");
+        scaryButton.style.color = "red";
+
+        let featuredArticle = document.querySelector(".featured-movie-article");
+        featuredArticle.style.backgroundColor = "red";
+      }
+    </script>
+  </body>
+</html>
